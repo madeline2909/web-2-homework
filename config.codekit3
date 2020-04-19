@@ -96,6 +96,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/logo.png": {
+		"ft": 32768,
+		"iS": 1657,
+		"oA": 0,
+		"oAP": "/deploy/img/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/mobile/gallery1.jpg": {
 		"ft": 16384,
 		"iS": 51763,
