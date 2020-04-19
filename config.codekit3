@@ -277,6 +277,14 @@
 		"oAP": "/design/web2 inclass.sketch",
 		"oF": 0
 		},
+	"/dev/footer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/footer.html",
+		"oF": 0
+		},
 	"/dev/index.kit": {
 		"cB": 0,
 		"ft": 2048,
@@ -438,6 +446,46 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/dev/section1.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/section1.html",
+		"oF": 1
+		},
+	"/dev/section2.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/section2.html",
+		"oF": 1
+		},
+	"/dev/section3.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/section3.html",
+		"oF": 1
+		},
+	"/dev/section4.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/section4.html",
+		"oF": 1
+		},
+	"/dev/section5.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/section5.html",
+		"oF": 1
 		}
 	},
 "hooks": [
