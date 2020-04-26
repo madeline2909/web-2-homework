@@ -350,15 +350,40 @@ textarea {
 /* =============
     section1
 ============= */
+#section-1 img {
+  width: 100%; }
+
 /* =============
     section2
 ============= */
+#section-2 img {
+  width: 100%; }
+
+#section-2 #section-2-container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". d1 ." ". c ." ". d2 ."; }
+  #section-2 #section-2-container #divider1 {
+    grid-area: d1; }
+  #section-2 #section-2-container #section-2-content {
+    grid-area: c; }
+  #section-2 #section-2-container #divider2 {
+    grid-area: d2; }
+
 /* =============
     section3
 ============= */
+#section-3 img {
+  width: 100%; }
+
 /* =============
     section4
 ============= */
+#section-4 img {
+  width: 100%; }
+
 /* =============
     section5
 ============= */
+#section-5 img {
+  width: 100%; }
