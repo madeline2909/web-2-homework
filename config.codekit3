@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "DAA72F21-6BF3-4EA0-BDB1-29FD39F40DF5"
+		"uuidString": "80C637D6-9084-45AE-A078-141E8FB2F173"
 		}
 	],
 "creatorBuild": "32001",
@@ -14,7 +14,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/deploy/css/styles-min.css",
 		"oF": 0,
 		"oS": 3
@@ -119,7 +119,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/deploy/js/scripts-min-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -147,14 +147,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/deploy/index.html",
-		"oF": 2
+		"oF": 3
 		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/js/scripts-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -364,7 +364,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/deploy/css/styles.css",
-		"oF": 2,
+		"oF": 3,
 		"oS": 0,
 		"uL": 1
 		},
@@ -374,7 +374,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-1.html",
-		"oF": 1
+		"oF": 0
 		},
 	"/dev/section-2.kit": {
 		"cB": 0,
@@ -382,7 +382,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-2.html",
-		"oF": 1
+		"oF": 0
 		},
 	"/dev/section-3.kit": {
 		"cB": 0,
@@ -390,7 +390,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-3.html",
-		"oF": 1
+		"oF": 0
 		},
 	"/dev/section-4.kit": {
 		"cB": 0,
@@ -398,7 +398,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-4.html",
-		"oF": 1
+		"oF": 0
 		},
 	"/dev/section-5.kit": {
 		"cB": 0,
@@ -406,7 +406,7 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-5.html",
-		"oF": 1
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -416,7 +416,7 @@
 "projectAttributes": {
 	"creationDate": 608959216.04879296,
 	"displayValue": "web-2-homework",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets-unblue",
 	"iconImageWasSetByUser": 0
 	},
