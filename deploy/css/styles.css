@@ -362,7 +362,7 @@ textarea {
   #footer #footer-container #date {
     grid-area: date;
     text-align: right;
-    padding-right: 10px; }
+    padding-right: 15%; }
 
 /* =============
     section1
@@ -389,7 +389,9 @@ textarea {
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". d1 ." ". c ." ". d2 ."; }
   #section-2 #section-2-container #divider1 {
-    grid-area: d1; }
+    grid-area: d1;
+    height: 2px;
+    border-color: #9F8273; }
   #section-2 #section-2-container #section-2-content {
     grid-area: c;
     text-align: center; }
