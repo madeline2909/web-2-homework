@@ -5,4 +5,14 @@
     img{
         width: 100%;
     }
+    #title-container{
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas:
+        ". t .";
+    
+        #title{
+            grid-area: t;
+        }
+    }
 }

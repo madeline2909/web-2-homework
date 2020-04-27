@@ -6,4 +6,24 @@
     img{
         width: 100%;
     };
+    #section-3-container{
+        display: grid;
+        grid-template-columns: 15px auto 15px;
+        grid-template-areas:
+        ". d1 ."
+        ". c ."
+        ". d2 .";
+    
+        #divider1{
+            grid-area: d1;
+        }
+
+        #section-3-content{
+            grid-area: c;
+        }
+        
+        #divider2{
+            grid-area: d2;
+        }
+    }
 }

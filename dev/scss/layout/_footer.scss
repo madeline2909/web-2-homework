@@ -1,3 +1,22 @@
 /* =============
     Footer
 ============= */
+
+#footer{
+
+    #footer-container{
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-areas: ". logo date";
+    
+        #logo{
+            grid-area: logo;
+        }
+    
+        #date{
+            grid-area: date;
+        }
+    }
+    
+
+}

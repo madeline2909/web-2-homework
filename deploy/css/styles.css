@@ -317,6 +317,11 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0; }
+  ul li {
+    list-style: none; }
+
 /* =============
     Typography
 ============= */
@@ -347,11 +352,27 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer #footer-container {
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  grid-template-areas: ". logo date"; }
+  #footer #footer-container #logo {
+    grid-area: logo; }
+  #footer #footer-container #date {
+    grid-area: date; }
+
 /* =============
     section1
 ============= */
 #section-1 img {
   width: 100%; }
+
+#section-1 #title-container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". t ."; }
+  #section-1 #title-container #title {
+    grid-area: t; }
 
 /* =============
     section2
@@ -376,14 +397,32 @@ textarea {
 #section-3 img {
   width: 100%; }
 
+#section-3 #section-3-container {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". d1 ." ". c ." ". d2 ."; }
+  #section-3 #section-3-container #divider1 {
+    grid-area: d1; }
+  #section-3 #section-3-container #section-3-content {
+    grid-area: c; }
+  #section-3 #section-3-container #divider2 {
+    grid-area: d2; }
+
 /* =============
     section4
 ============= */
-#section-4 img {
-  width: 100%; }
+#section-4 #gallery {
+  display: grid;
+  gap: 20px; }
+  #section-4 #gallery li img {
+    width: 100%; }
 
 /* =============
     section5
 ============= */
-#section-5 img {
-  width: 100%; }
+#section-5 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". content ."; }
+  #section-5 #section-5-content {
+    grid-area: content; }
