@@ -360,7 +360,9 @@ textarea {
   #footer #footer-container #logo {
     grid-area: logo; }
   #footer #footer-container #date {
-    grid-area: date; }
+    grid-area: date;
+    text-align: right;
+    padding-right: 10px; }
 
 /* =============
     section1
@@ -373,7 +375,8 @@ textarea {
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". t ."; }
   #section-1 #title-container #title {
-    grid-area: t; }
+    grid-area: t;
+    text-align: center; }
 
 /* =============
     section2
@@ -388,7 +391,8 @@ textarea {
   #section-2 #section-2-container #divider1 {
     grid-area: d1; }
   #section-2 #section-2-container #section-2-content {
-    grid-area: c; }
+    grid-area: c;
+    text-align: center; }
   #section-2 #section-2-container #divider2 {
     grid-area: d2; }
 
@@ -405,7 +409,8 @@ textarea {
   #section-3 #section-3-container #divider1 {
     grid-area: d1; }
   #section-3 #section-3-container #section-3-content {
-    grid-area: c; }
+    grid-area: c;
+    text-align: center; }
   #section-3 #section-3-container #divider2 {
     grid-area: d2; }
 
