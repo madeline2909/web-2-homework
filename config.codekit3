@@ -73,6 +73,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/section-4/gallery2.jpg": {
+		"ft": 16384,
+		"iS": 46618,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/gallery2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/section-4/gallery3.jpg": {
+		"ft": 16384,
+		"iS": 48696,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-4/gallery3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/section-5/profile.png": {
 		"ft": 32768,
 		"iS": 32863,
