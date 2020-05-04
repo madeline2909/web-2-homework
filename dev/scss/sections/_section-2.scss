@@ -3,25 +3,41 @@
 ============= */
 #section-2{
     
+    @include md{
+        display: grid;
+        grid-template-columns: 35% auto;
+        grid-template-areas: "section-2-img section-2-text";
+    }
+
     img{
         width: 100%;
     };
 
     #section-2-container{
+    
         display: grid;
         grid-template-columns: 15px auto 15px;
         grid-template-areas:
         ". d1 ."
         ". c ."
         ". d2 .";
-    
+
+        @include md{
+            grid-area: section-2-text;
+        }
+        
         #divider1{
             grid-area: d1;
+
         }
 
         #section-2-content{
             grid-area: c;
             text-align: center;
+
+            @include md{
+                text-align: left;
+            }
         }
         
         #divider2{

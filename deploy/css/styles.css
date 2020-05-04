@@ -381,6 +381,12 @@ textarea {
 /* =============
     section2
 ============= */
+@media (min-width: 768px) {
+  #section-2 {
+    display: grid;
+    grid-template-columns: 35% auto;
+    grid-template-areas: "section-2-img section-2-text"; } }
+
 #section-2 img {
   width: 100%; }
 
@@ -388,11 +394,17 @@ textarea {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". d1 ." ". c ." ". d2 ."; }
+  @media (min-width: 768px) {
+    #section-2 #section-2-container {
+      grid-area: section-2-text; } }
   #section-2 #section-2-container #divider1 {
     grid-area: d1; }
   #section-2 #section-2-container #section-2-content {
     grid-area: c;
     text-align: center; }
+    @media (min-width: 768px) {
+      #section-2 #section-2-container #section-2-content {
+        text-align: left; } }
   #section-2 #section-2-container #divider2 {
     grid-area: d2; }
 
@@ -406,6 +418,11 @@ textarea {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". d1 ." ". c ." ". d2 ."; }
+  @media (min-width: 768px) {
+    #section-3 #section-3-container {
+      display: grid;
+      grid-template-columns: 20% auto 20%;
+      grid-template-areas: ". d1 ." ". c ." ". d2 ."; } }
   #section-3 #section-3-container #divider1 {
     grid-area: d1; }
   #section-3 #section-3-container #section-3-content {
@@ -420,9 +437,23 @@ textarea {
 #section-4 #gallery {
   display: grid;
   gap: 20px; }
+  @media (min-width: 768px) {
+    #section-4 #gallery {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "g1 g1"x "g2 g3"; } }
   #section-4 #gallery li img {
     width: 100%; }
-
+  @media (min-width: 768px) {
+    #section-4 #gallery li #g1 {
+      grid-area: g1; } }
+  @media (min-width: 768px) {
+    #section-4 #gallery li #g2 {
+      grid-area: g2; } }
+  @media (min-width: 768px) {
+    #section-4 #gallery li #g3 {
+      grid-area: g3; } }
 /* =============
     section5
 ============= */

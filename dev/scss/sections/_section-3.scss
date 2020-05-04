@@ -14,6 +14,15 @@
         ". c ."
         ". d2 .";
     
+        @include md{
+            display: grid;
+            grid-template-columns: 20% auto 20%;
+            grid-template-areas:
+            ". d1 ."
+            ". c ."
+            ". d2 .";
+    
+        }
         #divider1{
             grid-area: d1;
         }
