@@ -2,7 +2,7 @@
     section2
 ============= */
 #section-2{
-    
+
     img{
         width: 100%;
     };
@@ -18,7 +18,6 @@
     }
 
     @include lg{
-    
         display: grid;
         grid-template-columns: 50% auto;
         grid-template-areas: "section-2-img section-2-container";
@@ -48,12 +47,27 @@
         @include md{
             grid-area: section-2-container;
         }
+
+        @include lg{
+            display: block;
+            align-self: center;
+            grid-area: section-2-container;
+            display: grid;
+            grid-template-columns: 15px auto 15px;
+            grid-template-areas:
+            ". section-2-content .";
+        }
         
         #section-2-content{
             grid-area: section-2-content;
             text-align: center;
 
             @include md{
+                text-align: left;
+            }
+            
+            @include lg{
+                grid-area: section-2-content;
                 text-align: left;
             }
         }
