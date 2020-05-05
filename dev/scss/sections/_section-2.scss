@@ -3,15 +3,27 @@
 ============= */
 #section-2{
     
+    
+    img{
+        width: 100%;
+    };
+    
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
     @include md{
         display: grid;
         grid-template-columns: 35% auto;
         grid-template-areas: "section-2-img section-2-text";
     }
 
-    img{
-        width: 100%;
-    };
+    @include lg{
+    
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "section-2-img section-2-text";
+    }
 
     #section-2-container{
     
@@ -26,7 +38,7 @@
             grid-area: section-2-text;
         }
         
-        #divider1{
+        #section-2-divider1{
             grid-area: d1;
 
         }
@@ -40,7 +52,7 @@
             }
         }
         
-        #divider2{
+        #section-2-divider2{
             grid-area: d2;
         }
     }

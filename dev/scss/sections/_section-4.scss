@@ -8,13 +8,27 @@
         display: grid;
         gap:20px;
 
+        @include xl{
+            grid-template-columns: auto 1200px auto;
+        }
+
         @include md{
             display: grid;
             gap:20px;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 50% auto;
             grid-template-areas: 
             "g1 g1"
             "g2 g3"
+            ;
+        }
+
+        @include lg{
+            display: grid;
+            gap:20px;
+            grid-template-columns: 60% auto;
+            grid-template-areas: 
+            "g1 g2"
+            "g1 g3"
             ;
         }
 
@@ -22,23 +36,35 @@
             img{
                 width: 100%;
             }
+        }
 
-            #g1{
-                @include md{
-                    grid-area: g1;
-                }
-            }
+        #g1{
+            @include md{
+                grid-area: g1;
+             }
             
-            #g2{
-                @include md{
-                    grid-area: g2;
-                }
+            @include lg{
+                grid-area: g1;
+            }
+        }
+            
+        #g2{
+            @include md{
+                grid-area: g2;
             }
 
-            #g3{
-                @include md{
-                    grid-area: g3;
-                }
+            @include lg{
+                grid-area: g2;
+            }
+        }
+
+        #g3{
+            @include md{
+                grid-area: g3;
+            }
+
+            @include lg{
+                grid-area: g3;
             }
         }
     }
