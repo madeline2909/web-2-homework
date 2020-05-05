@@ -45,13 +45,23 @@
         ". section-2-content .";
 
         @include md{
+            display: block;
+            align-self: center;
+
             grid-area: section-2-container;
+
+            display: grid;
+            grid-template-columns: 15px auto 15px;
+            grid-template-areas:
+            ". section-2-content .";
         }
 
         @include lg{
             display: block;
             align-self: center;
+
             grid-area: section-2-container;
+
             display: grid;
             grid-template-columns: 15px auto 15px;
             grid-template-areas:
@@ -63,6 +73,7 @@
             text-align: center;
 
             @include md{
+                grid-area: section-2-content;
                 text-align: left;
             }
             

@@ -415,7 +415,12 @@ textarea {
   grid-template-areas: ". section-2-content ."; }
   @media (min-width: 768px) {
     #section-2 #section-2-container {
-      grid-area: section-2-container; } }
+      display: block;
+      align-self: center;
+      grid-area: section-2-container;
+      display: grid;
+      grid-template-columns: 15px auto 15px;
+      grid-template-areas: ". section-2-content ."; } }
   @media (min-width: 992px) {
     #section-2 #section-2-container {
       display: block;
@@ -429,6 +434,7 @@ textarea {
     text-align: center; }
     @media (min-width: 768px) {
       #section-2 #section-2-container #section-2-content {
+        grid-area: section-2-content;
         text-align: left; } }
     @media (min-width: 992px) {
       #section-2 #section-2-container #section-2-content {
