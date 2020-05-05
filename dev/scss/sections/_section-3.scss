@@ -15,39 +15,26 @@
         display: grid;
         grid-template-columns: 15px auto 15px;
         grid-template-areas:
-        ". d1 ."
-        ". c ."
-        ". d2 .";
+        ". section-3-content .";
         
         @include md{
             display: grid;
             grid-template-columns: 10% auto 10%;
             grid-template-areas:
-            ". d1 ."
-            ". c ."
-            ". d2 .";
+            ". section-3-content .";
         }
 
         @include lg{
+
             display: grid;
             grid-template-columns: 20% auto 20%;
             grid-template-areas:
-            ". d1 ."
-            ". c ."
-            ". d2 .";
-        }
-
-        #section-3-divider1{
-            grid-area: d1;
+            ". section-3-content .";
         }
 
         #section-3-content{
-            grid-area: c;
+            grid-area: section-3-content;
             text-align: center;
-        }
-        
-        #section-3-divider2{
-            grid-area: d2;
         }
     }
 }

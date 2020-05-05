@@ -392,32 +392,36 @@ textarea {
   #section-2 {
     display: grid;
     grid-template-columns: 35% auto;
-    grid-template-areas: "section-2-img section-2-text"; } }
+    grid-template-areas: "section-2-img section-2-container"; } }
 
 @media (min-width: 992px) {
   #section-2 {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "section-2-img section-2-text"; } }
+    grid-template-areas: "section-2-img section-2-container"; } }
 
+#section-2 #section-2-img {
+  grid-area: section-2-img; }
+  @media (min-width: 768px) {
+    #section-2 #section-2-img {
+      grid-area: section-2-img; } }
+  @media (min-width: 992px) {
+    #section-2 #section-2-img {
+      grid-area: section-2-img; } }
 #section-2 #section-2-container {
+  grid-area: section-2-container;
   display: grid;
   grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". d1 ." ". c ." ". d2 ."; }
+  grid-template-areas: ". section-2-content ."; }
   @media (min-width: 768px) {
     #section-2 #section-2-container {
-      grid-area: section-2-text; } }
-  #section-2 #section-2-container #section-2-divider1 {
-    grid-area: d1; }
+      grid-area: section-2-container; } }
   #section-2 #section-2-container #section-2-content {
-    grid-area: c;
+    grid-area: section-2-content;
     text-align: center; }
     @media (min-width: 768px) {
       #section-2 #section-2-container #section-2-content {
         text-align: left; } }
-  #section-2 #section-2-container #section-2-divider2 {
-    grid-area: d2; }
-
 /* =============
     section3
 ============= */
@@ -427,7 +431,7 @@ textarea {
 #section-3 #section-3-container {
   display: grid;
   grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". d1 ." ". c ." ". d2 ."; }
+  grid-template-areas: ". section-3-content ."; }
   @media (min-width: 1200px) {
     #section-3 #section-3-container {
       grid-template-columns: auto 1200px auto; } }
@@ -435,19 +439,15 @@ textarea {
     #section-3 #section-3-container {
       display: grid;
       grid-template-columns: 10% auto 10%;
-      grid-template-areas: ". d1 ." ". c ." ". d2 ."; } }
+      grid-template-areas: ". section-3-content ."; } }
   @media (min-width: 992px) {
     #section-3 #section-3-container {
       display: grid;
       grid-template-columns: 20% auto 20%;
-      grid-template-areas: ". d1 ." ". c ." ". d2 ."; } }
-  #section-3 #section-3-container #section-3-divider1 {
-    grid-area: d1; }
+      grid-template-areas: ". section-3-content ."; } }
   #section-3 #section-3-container #section-3-content {
-    grid-area: c;
+    grid-area: section-3-content;
     text-align: center; }
-  #section-3 #section-3-container #section-3-divider2 {
-    grid-area: d2; }
 
 /* =============
     section4

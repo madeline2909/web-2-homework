@@ -3,7 +3,6 @@
 ============= */
 #section-2{
     
-    
     img{
         width: 100%;
     };
@@ -15,36 +14,43 @@
     @include md{
         display: grid;
         grid-template-columns: 35% auto;
-        grid-template-areas: "section-2-img section-2-text";
+        grid-template-areas: "section-2-img section-2-container";
     }
 
     @include lg{
     
         display: grid;
         grid-template-columns: 50% auto;
-        grid-template-areas: "section-2-img section-2-text";
+        grid-template-areas: "section-2-img section-2-container";
     }
 
+    #section-2-img{
+        grid-area: section-2-img;
+
+        @include md{
+            grid-area: section-2-img;
+        }
+
+        @include lg{
+            grid-area: section-2-img;
+        }
+
+        
+    }
     #section-2-container{
+        grid-area: section-2-container;
     
         display: grid;
         grid-template-columns: 15px auto 15px;
         grid-template-areas:
-        ". d1 ."
-        ". c ."
-        ". d2 .";
+        ". section-2-content .";
 
         @include md{
-            grid-area: section-2-text;
+            grid-area: section-2-container;
         }
         
-        #section-2-divider1{
-            grid-area: d1;
-
-        }
-
         #section-2-content{
-            grid-area: c;
+            grid-area: section-2-content;
             text-align: center;
 
             @include md{
@@ -52,8 +58,5 @@
             }
         }
         
-        #section-2-divider2{
-            grid-area: d2;
-        }
     }
 }
