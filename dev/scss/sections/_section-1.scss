@@ -2,9 +2,24 @@
     section1
 ============= */
 #section-1{
-    img{
-        width: 100%;
+    
+    background-image: url('../img/section-1/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+
+    @include md{
+        height: 55vh;
     }
+
+    @include lg{ 
+        height: 650px;
+    }
+
+    @include xl{
+        height: 50vh;
+    }
+
     #title-container{
         display: grid;
         grid-template-columns: 15px auto 15px;

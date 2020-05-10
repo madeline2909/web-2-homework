@@ -367,16 +367,27 @@ textarea {
 /* =============
     section1
 ============= */
-#section-1 img {
-  width: 100%; }
-
-#section-1 #title-container {
-  display: grid;
-  grid-template-columns: 15px auto 15px;
-  grid-template-areas: ". t ."; }
-  #section-1 #title-container #title {
-    grid-area: t;
-    text-align: center; }
+#section-1 {
+  background-image: url("../img/section-1/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 45vh; }
+  @media (min-width: 768px) {
+    #section-1 {
+      height: 55vh; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      height: 650px; } }
+  @media (min-width: 1200px) {
+    #section-1 {
+      height: 50vh; } }
+  #section-1 #title-container {
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". t ."; }
+    #section-1 #title-container #title {
+      grid-area: t;
+      text-align: center; }
 
 /* =============
     section2
