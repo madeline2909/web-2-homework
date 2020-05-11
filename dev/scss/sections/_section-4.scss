@@ -42,11 +42,11 @@
             @include md{
                 background-position: 0 -350px;
                 height: 715px;
-
                 grid-area: g1;
              }
             
             @include lg{
+                height: 720px;
                 grid-area: g1;
             }
         }
@@ -64,6 +64,7 @@
             }
 
             @include lg{
+                background-position: 0 -80px;
                 grid-area: g2;
             }
         }
@@ -81,6 +82,7 @@
             }
 
             @include lg{
+                background-position: 0 -100px;
                 grid-area: g3;
             }
         }

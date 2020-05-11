@@ -334,7 +334,7 @@ ul {
       margin-top: 51px; } }
   @media (min-width: 992px) {
     .content-spacing {
-      margin-top: 51px; } }
+      margin: 51px 0; } }
 /* =============
     Typography
 ============= */
@@ -357,7 +357,7 @@ h1, h2, h3, h4, h5, h6, p {
   @media (min-width: 992px) {
     #title {
       text-align: center;
-      font-size: 72px; } }
+      font-size: 70px; } }
 #section-2-text {
   color: #256061; }
   #section-2-text > h2 {
@@ -397,6 +397,12 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 35px;
   color: #256061; }
 
+#date {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff; }
+
 /* =============
     Buttons
 ============= */
@@ -425,14 +431,21 @@ textarea {
     Footer
 ============= */
 #footer {
-  background-color: #88A4A8;
-  height: 80px; }
+  padding: 5px;
+  height: 50px;
+  background-color: #88A4A8; }
   #footer #footer-container {
     display: flex;
-    justify-content: flex-end;
     justify-content: space-between;
     height: 100%;
-    align-items: center; }
+    align-items: flex-end; }
+    #footer #footer-container #logo {
+      background-image: url("../img/footer/logo.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+      width: 100%; }
 
 /* =============
     section1
@@ -446,16 +459,14 @@ textarea {
   height: 420px; }
   @media (min-width: 768px) {
     #section-1 {
-      background-size: 65.625rem;
+      background-size: 1100px;
       height: 550px;
-      background-position: 0 -1100px; } }
+      background-position: 0 -1180px; } }
   @media (min-width: 992px) {
     #section-1 {
       background-size: cover;
-      height: 1050px; } }
-  @media (min-width: 1200px) {
-    #section-1 {
-      height: 50vh; } }
+      height: 720px;
+      background-position: 0 -1300px; } }
   #section-1 #title {
     padding: 30px; }
     @media (min-width: 768px) {
@@ -466,6 +477,8 @@ textarea {
         bottom: 0; } }
     @media (min-width: 992px) {
       #section-1 #title {
+        padding: 30px 0;
+        width: 100%;
         position: static; } }
 /* =============
     section2
@@ -567,11 +580,13 @@ textarea {
       grid-template-columns: auto 1200px auto; } }
   @media (min-width: 768px) {
     #section-3 #section-3-container {
+      margin: 51px 0;
       display: grid;
       grid-template-columns: 10% auto 10%;
       grid-template-areas: ". section-3-content ."; } }
   @media (min-width: 992px) {
     #section-3 #section-3-container {
+      margin: 51px 0;
       display: grid;
       grid-template-columns: 20% auto 20%;
       grid-template-areas: ". section-3-content ."; } }
@@ -618,6 +633,7 @@ textarea {
         grid-area: g1; } }
     @media (min-width: 992px) {
       #section-4 #gallery #g1 {
+        height: 720px;
         grid-area: g1; } }
   #section-4 #gallery #g2 {
     background-image: url("../img/section-4/gallery2.jpg");
@@ -631,6 +647,7 @@ textarea {
         grid-area: g2; } }
     @media (min-width: 992px) {
       #section-4 #gallery #g2 {
+        background-position: 0 -80px;
         grid-area: g2; } }
   #section-4 #gallery #g3 {
     background-image: url("../img/section-4/gallery3.jpg");
@@ -644,6 +661,7 @@ textarea {
         grid-area: g3; } }
     @media (min-width: 992px) {
       #section-4 #gallery #g3 {
+        background-position: 0 -100px;
         grid-area: g3; } }
 /* =============
     section5
@@ -663,8 +681,8 @@ textarea {
   @media (min-width: 992px) {
     #section-5 {
       display: grid;
-      grid-template-columns: 30% auto;
-      grid-template-areas: "section-5-img-container section-5-text-container"; } }
+      grid-template-columns: 20px 30% auto;
+      grid-template-areas: ". section-5-img-container section-5-text-container"; } }
   #section-5 #section-5-img-container {
     background-image: url("../img/section-5/profile.png");
     background-size: contain;

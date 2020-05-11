@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5,h6,p{
     }
     @include lg{
         text-align: center;
-        font-size: 72px;
+        font-size: 70px;
     }
 }
 
@@ -69,4 +69,11 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 20px;
     line-height: 35px;
     color: $marble;
+}
+
+#date{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: $white;
 }

@@ -3,7 +3,6 @@
 ============= */
 
 #section-5{
-
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: 
@@ -24,9 +23,9 @@
 
     @include lg{
         display: grid;
-        grid-template-columns: 30% auto;
+        grid-template-columns:  20px 30% auto;
         grid-template-areas: 
-        "section-5-img-container section-5-text-container";
+        ". section-5-img-container section-5-text-container";
     }
 
     #section-5-img-container{
@@ -36,7 +35,6 @@
         background-position: center;
         height: 400px;
         grid-area: section-5-img-container;
-        
     }
 
     #section-5-text-container{
