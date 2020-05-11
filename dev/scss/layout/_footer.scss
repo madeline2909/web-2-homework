@@ -3,22 +3,15 @@
 ============= */
 
 #footer{
+    background-color: #88A4A8;
+    height: 60px;
 
     #footer-container{
-        display: grid;
-        grid-template-columns: 10% auto 10%;
-        grid-template-areas: ". logo date";
+        display: flex;
+        justify-content: flex-end;
+        justify-content: space-between;
+        align-items: center;
     
-        #logo{
-            grid-area: logo;
-        }
-    
-        #date{
-            grid-area: date;
-            text-align: right;
-            padding-right: 15%;
-        }
     }
-    
-
 }
+    

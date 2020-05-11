@@ -32,13 +32,13 @@
             ;
         }
 
-        li{
-            img{
-                width: 100%;
-            }
-        }
-
         #g1{
+            background-image: url('../img/section-4/gallery1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-position: 0 -200px;
+            height: 350px;
+
             @include md{
                 grid-area: g1;
              }
@@ -49,6 +49,12 @@
         }
             
         #g2{
+            background-image: url('../img/section-4/gallery2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-position: 0 -20px;
+            height: 330px;
+
             @include md{
                 grid-area: g2;
             }
@@ -59,6 +65,12 @@
         }
 
         #g3{
+            background-image: url('../img/section-4/gallery3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-position: 0 -40px;
+            height: 330px;
+
             @include md{
                 grid-area: g3;
             }

@@ -9,3 +9,13 @@ ul{
         list-style: none;
     }
 }
+
+.content-spacing{
+    margin-top: 34px;
+    @include md{
+        margin-top: 51px;
+    }
+    @include lg{
+        margin-top: 51px;
+    }
+}

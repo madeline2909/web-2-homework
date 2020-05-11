@@ -323,9 +323,57 @@ ul {
   ul li {
     list-style: none; }
 
+.content-spacing {
+  margin-top: 34px; }
+  @media (min-width: 768px) {
+    .content-spacing {
+      margin-top: 51px; } }
+  @media (min-width: 992px) {
+    .content-spacing {
+      margin-top: 51px; } }
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+#title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 59px;
+  text-align: center;
+  color: #fff; }
+
+#section-2-text {
+  color: #256061; }
+  #section-2-text > h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px; }
+  #section-2-text > h5 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px; }
+
+#section-3-content > h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 40px;
+  color: #9F8273;
+  text-align: center; }
+
+#section-5-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  color: #256061; }
+
 /* =============
     Buttons
 ============= */
@@ -353,16 +401,14 @@ textarea {
 /* =============
     Footer
 ============= */
-#footer #footer-container {
-  display: grid;
-  grid-template-columns: 10% auto 10%;
-  grid-template-areas: ". logo date"; }
-  #footer #footer-container #logo {
-    grid-area: logo; }
-  #footer #footer-container #date {
-    grid-area: date;
-    text-align: right;
-    padding-right: 15%; }
+#footer {
+  background-color: #88A4A8;
+  height: 60px; }
+  #footer #footer-container {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center; }
 
 /* =============
     section1
@@ -371,55 +417,43 @@ textarea {
   background-image: url("../img/section-1/hero.jpg");
   background-size: cover;
   background-position: center;
-  height: 45vh; }
+  background-position: 0 -200px;
+  height: 55vh; }
   @media (min-width: 768px) {
     #section-1 {
-      height: 55vh; } }
+      height: 50vh;
+      background-position: 0 -700px; } }
   @media (min-width: 992px) {
     #section-1 {
-      height: 650px; } }
+      height: 55vh; } }
   @media (min-width: 1200px) {
     #section-1 {
       height: 50vh; } }
-  #section-1 #title-container {
-    display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". t ."; }
-    #section-1 #title-container #title {
-      grid-area: t;
-      text-align: center; }
+  #section-1 #title {
+    padding: 30px; }
 
 /* =============
     section2
 ============= */
-#section-2 img {
-  width: 100%; }
-
 @media (min-width: 1200px) {
   #section-2 {
+    display: grid;
     grid-template-columns: auto 1200px auto; } }
 
 @media (min-width: 768px) {
   #section-2 {
     display: grid;
     grid-template-columns: 35% auto;
-    grid-template-areas: "section-2-img section-2-container"; } }
+    grid-template-areas: ". section-2-container"; } }
 
 @media (min-width: 992px) {
   #section-2 {
     display: grid;
     grid-template-columns: 50% auto;
-    grid-template-areas: "section-2-img section-2-container"; } }
+    grid-template-areas: ". section-2-container"; } }
 
-#section-2 #section-2-img {
-  grid-area: section-2-img; }
-  @media (min-width: 768px) {
-    #section-2 #section-2-img {
-      grid-area: section-2-img; } }
-  @media (min-width: 992px) {
-    #section-2 #section-2-img {
-      grid-area: section-2-img; } }
 #section-2 #section-2-container {
+  margin-bottom: 35px;
   grid-area: section-2-container;
   display: grid;
   grid-template-columns: 15px auto 15px;
@@ -443,6 +477,14 @@ textarea {
   #section-2 #section-2-container #section-2-content {
     grid-area: section-2-content;
     text-align: center; }
+    #section-2 #section-2-container #section-2-content > hr {
+      border: none;
+      background-color: #9F8273;
+      height: 2px; }
+    #section-2 #section-2-container #section-2-content #section-2-text {
+      margin: 19px; }
+      #section-2 #section-2-container #section-2-content #section-2-text > h5 {
+        margin-top: 10px; }
     @media (min-width: 768px) {
       #section-2 #section-2-container #section-2-content {
         grid-area: section-2-content;
@@ -451,13 +493,28 @@ textarea {
       #section-2 #section-2-container #section-2-content {
         grid-area: section-2-content;
         text-align: left; } }
+#section-2 aside {
+  background-image: url("../img/section-2/section2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 481px; }
+  @media (min-width: 768px) {
+    #section-2 aside {
+      height: 420px; } }
+  @media (min-width: 992px) {
+    #section-2 aside {
+      height: 752px; } }
 /* =============
     section3
 ============= */
-#section-3 img {
-  width: 100%; }
+#section-3 #section-3-img {
+  background-image: url("../img/section-3/hero2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 520px; }
 
 #section-3 #section-3-container {
+  margin: 34px 0;
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-3-content ."; }
@@ -475,8 +532,13 @@ textarea {
       grid-template-columns: 20% auto 20%;
       grid-template-areas: ". section-3-content ."; } }
   #section-3 #section-3-container #section-3-content {
-    grid-area: section-3-content;
-    text-align: center; }
+    grid-area: section-3-content; }
+    #section-3 #section-3-container #section-3-content > h1 {
+      margin: 15px 0; }
+    #section-3 #section-3-container #section-3-content > hr {
+      border: none;
+      background-color: #9F8273;
+      height: 2px; }
 
 /* =============
     section4
@@ -499,26 +561,42 @@ textarea {
       gap: 20px;
       grid-template-columns: 60% auto;
       grid-template-areas: "g1 g2" "g1 g3"; } }
-  #section-4 #gallery li img {
-    width: 100%; }
-  @media (min-width: 768px) {
-    #section-4 #gallery #g1 {
-      grid-area: g1; } }
-  @media (min-width: 992px) {
-    #section-4 #gallery #g1 {
-      grid-area: g1; } }
-  @media (min-width: 768px) {
-    #section-4 #gallery #g2 {
-      grid-area: g2; } }
-  @media (min-width: 992px) {
-    #section-4 #gallery #g2 {
-      grid-area: g2; } }
-  @media (min-width: 768px) {
-    #section-4 #gallery #g3 {
-      grid-area: g3; } }
-  @media (min-width: 992px) {
-    #section-4 #gallery #g3 {
-      grid-area: g3; } }
+  #section-4 #gallery #g1 {
+    background-image: url("../img/section-4/gallery1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: 0 -200px;
+    height: 350px; }
+    @media (min-width: 768px) {
+      #section-4 #gallery #g1 {
+        grid-area: g1; } }
+    @media (min-width: 992px) {
+      #section-4 #gallery #g1 {
+        grid-area: g1; } }
+  #section-4 #gallery #g2 {
+    background-image: url("../img/section-4/gallery2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: 0 -20px;
+    height: 330px; }
+    @media (min-width: 768px) {
+      #section-4 #gallery #g2 {
+        grid-area: g2; } }
+    @media (min-width: 992px) {
+      #section-4 #gallery #g2 {
+        grid-area: g2; } }
+  #section-4 #gallery #g3 {
+    background-image: url("../img/section-4/gallery3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position: 0 -40px;
+    height: 330px; }
+    @media (min-width: 768px) {
+      #section-4 #gallery #g3 {
+        grid-area: g3; } }
+    @media (min-width: 992px) {
+      #section-4 #gallery #g3 {
+        grid-area: g3; } }
 /* =============
     section5
 ============= */
@@ -540,28 +618,12 @@ textarea {
       grid-template-columns: 30% auto;
       grid-template-areas: "section-5-img-container section-5-text-container"; } }
   #section-5 #section-5-img-container {
+    background-image: url("../img/section-5/profile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
     grid-area: section-5-img-container; }
-    @media (min-width: 768px) {
-      #section-5 #section-5-img-container {
-        grid-area: section-5-img-container;
-        display: grid;
-        grid-template-columns: 140px auto 140px;
-        grid-template-areas: ". section-5-img ."; } }
-    @media (min-width: 992px) {
-      #section-5 #section-5-img-container {
-        grid-area: section-5-img-container;
-        display: grid;
-        grid-template-columns: 15px auto 15px;
-        grid-template-areas: ". section-5-img ."; } }
-    #section-5 #section-5-img-container #section-5-img {
-      width: 100%;
-      grid-area: section-5-img; }
-      @media (min-width: 768px) {
-        #section-5 #section-5-img-container #section-5-img {
-          grid-area: section-5-img; } }
-      @media (min-width: 992px) {
-        #section-5 #section-5-img-container #section-5-img {
-          grid-area: section-5-img; } }
   #section-5 #section-5-text-container {
     grid-area: section-5-text-container; }
     @media (min-width: 992px) {
@@ -574,6 +636,7 @@ textarea {
       #section-5 #section-5-text-container {
         grid-area: section-5-text-container; } }
     #section-5 #section-5-text-container #section-5-text {
+      margin: 25px 0;
       grid-area: section-5-text; }
       @media (min-width: 992px) {
         #section-5 #section-5-text-container #section-5-text {

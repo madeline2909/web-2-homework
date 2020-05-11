@@ -3,42 +3,26 @@
 ============= */
 #section-2{
 
-    img{
-        width: 100%;
-    };
-    
     @include xl{
+        display: grid;
         grid-template-columns: auto 1200px auto;
     }
 
     @include md{
         display: grid;
         grid-template-columns: 35% auto;
-        grid-template-areas: "section-2-img section-2-container";
+        grid-template-areas: ". section-2-container";
     }
 
     @include lg{
         display: grid;
         grid-template-columns: 50% auto;
-        grid-template-areas: "section-2-img section-2-container";
+        grid-template-areas: ". section-2-container";
     }
-
-    #section-2-img{
-        grid-area: section-2-img;
-
-        @include md{
-            grid-area: section-2-img;
-        }
-
-        @include lg{
-            grid-area: section-2-img;
-        }
-
         
-    }
     #section-2-container{
+        margin-bottom: 35px;
         grid-area: section-2-container;
-    
         display: grid;
         grid-template-columns: 15px auto 15px;
         grid-template-areas:
@@ -69,6 +53,18 @@
         }
         
         #section-2-content{
+            >hr{
+                border: none;
+                background-color: $sand;
+                height: 2px;
+            }
+
+            #section-2-text{
+                margin: 19px;
+                >h5{
+                    margin-top: 10px;
+                }
+            }
             grid-area: section-2-content;
             text-align: center;
 
@@ -83,5 +79,24 @@
             }
         }
         
+    }
+
+    aside{
+        background-image: url('../img/section-2/section2.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 481px;
+
+        @include md{
+            height: 420px;
+        }
+
+        @include lg{
+            height: 752px;
+        }
+
+        @include xl{
+            
+        }
     }
 }

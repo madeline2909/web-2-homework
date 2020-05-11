@@ -30,36 +30,12 @@
     }
 
     #section-5-img-container{
+        background-image: url('../img/section-5/profile.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
         grid-area: section-5-img-container;
-
-        @include md{
-            grid-area: section-5-img-container;
-            
-            display: grid;
-            grid-template-columns: 140px auto 140px;
-            grid-template-areas: ". section-5-img .";
-        }
-
-        @include lg{
-            grid-area: section-5-img-container;
-
-            display: grid;
-            grid-template-columns: 15px auto 15px;
-            grid-template-areas: ". section-5-img .";
-        }
-        
-        #section-5-img{
-            width: 100%;
-            grid-area: section-5-img;
-            
-            @include md{
-                grid-area: section-5-img;
-            }
-
-            @include lg{
-                grid-area: section-5-img;
-            }
-        }
     }
 
     #section-5-text-container{
@@ -77,6 +53,7 @@
         }
 
         #section-5-text{
+            margin: 25px 0;
             grid-area: section-5-text;
 
             @include lg{

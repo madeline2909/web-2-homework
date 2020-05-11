@@ -1,3 +1,50 @@
 /* =============
     Typography
 ============= */
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+#title{
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 59px;
+    text-align: center;
+    color: $white;
+}
+#section-2-text{
+    color: $marble;
+    >h2{
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 32px;
+        
+    }
+    >h5{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+#section-3-content{
+    >h1{
+        font-family: 'Playfair Display', serif;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 40px;
+        color: $sand;
+        text-align: center; 
+    }
+}
+
+#section-5-text{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    color: $marble;
+}
