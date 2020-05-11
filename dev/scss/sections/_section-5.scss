@@ -36,6 +36,10 @@
         background-position: center;
         height: 400px;
         grid-area: section-5-img-container;
+        @include lg{
+            height: 318px;
+            margin: 0 15px;
+        }
     }
 
     #section-5-text-container{

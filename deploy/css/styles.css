@@ -345,7 +345,13 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 59px;
   text-align: center;
   color: #fff; }
-
+  @media (min-width: 768px) {
+    #title {
+      text-align: left;
+      font-size: 56px; } }
+  @media (min-width: 992px) {
+    #title {
+      font-size: 72px; } }
 #section-2-text {
   color: #256061; }
   #section-2-text > h2 {
@@ -353,6 +359,10 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 600;
     font-size: 32px;
     line-height: 32px; }
+    @media (min-width: 768px) {
+      #section-2-text > h2 {
+        font-size: 35px;
+        line-height: 35px; } }
   #section-2-text > h5 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
@@ -366,7 +376,14 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 40px;
   color: #9F8273;
   text-align: center; }
-
+  @media (min-width: 768px) {
+    #section-3-content > h1 {
+      font-size: 40px;
+      line-height: 50px; } }
+  @media (min-width: 992px) {
+    #section-3-content > h1 {
+      font-size: 60px;
+      line-height: 65px; } }
 #section-5-text {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -418,20 +435,21 @@ textarea {
   background-size: cover;
   background-position: center;
   background-position: 0 -200px;
-  height: 55vh; }
+  height: 380px; }
+  #section-1 #title {
+    padding: 30px; }
   @media (min-width: 768px) {
     #section-1 {
-      height: 50vh;
-      background-position: 0 -700px; } }
+      background-size: 68.75rem;
+      height: 515px;
+      background-position: 0 -1200px; } }
   @media (min-width: 992px) {
     #section-1 {
-      height: 55vh; } }
+      background-size: cover;
+      height: 750px; } }
   @media (min-width: 1200px) {
     #section-1 {
       height: 50vh; } }
-  #section-1 #title {
-    padding: 30px; }
-
 /* =============
     section2
 ============= */
@@ -483,6 +501,9 @@ textarea {
       height: 2px; }
     #section-2 #section-2-container #section-2-content #section-2-text {
       margin: 19px; }
+      @media (min-width: 768px) {
+        #section-2 #section-2-container #section-2-content #section-2-text {
+          margin: 19px 30px 19px 0; } }
       #section-2 #section-2-container #section-2-content #section-2-text > h5 {
         margin-top: 10px; }
     @media (min-width: 768px) {
@@ -503,7 +524,7 @@ textarea {
       height: 420px; } }
   @media (min-width: 992px) {
     #section-2 aside {
-      height: 752px; } }
+      height: 800px; } }
 /* =============
     section3
 ============= */
@@ -512,7 +533,13 @@ textarea {
   background-size: cover;
   background-position: center;
   height: 520px; }
-
+  @media (min-width: 768px) {
+    #section-3 #section-3-img {
+      background-position: 0 -390px; } }
+  @media (min-width: 992px) {
+    #section-3 #section-3-img {
+      height: 750px;
+      background-position: 0 -740px; } }
 #section-3 #section-3-container {
   margin: 34px 0;
   display: grid;
@@ -569,6 +596,8 @@ textarea {
     height: 350px; }
     @media (min-width: 768px) {
       #section-4 #gallery #g1 {
+        background-position: 0 -400px;
+        height: 715px;
         grid-area: g1; } }
     @media (min-width: 992px) {
       #section-4 #gallery #g1 {
@@ -581,6 +610,7 @@ textarea {
     height: 330px; }
     @media (min-width: 768px) {
       #section-4 #gallery #g2 {
+        height: 350px;
         grid-area: g2; } }
     @media (min-width: 992px) {
       #section-4 #gallery #g2 {
@@ -593,6 +623,7 @@ textarea {
     height: 330px; }
     @media (min-width: 768px) {
       #section-4 #gallery #g3 {
+        height: 350px;
         grid-area: g3; } }
     @media (min-width: 992px) {
       #section-4 #gallery #g3 {
@@ -624,6 +655,10 @@ textarea {
     background-position: center;
     height: 400px;
     grid-area: section-5-img-container; }
+    @media (min-width: 992px) {
+      #section-5 #section-5-img-container {
+        height: 318px;
+        margin: 0 15px; } }
   #section-5 #section-5-text-container {
     grid-area: section-5-text-container; }
     @media (min-width: 992px) {

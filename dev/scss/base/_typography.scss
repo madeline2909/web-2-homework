@@ -12,7 +12,15 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 59px;
     text-align: center;
     color: $white;
+    @include md{
+        text-align: left;
+        font-size: 56px;
+    }
+    @include lg{
+        font-size: 72px;
+    }
 }
+
 #section-2-text{
     color: $marble;
     >h2{
@@ -20,6 +28,10 @@ h1,h2,h3,h4,h5,h6,p{
         font-weight: 600;
         font-size: 32px;
         line-height: 32px;
+        @include md{
+            font-size: 35px;
+            line-height: 35px;
+        }
         
     }
     >h5{
@@ -38,6 +50,14 @@ h1,h2,h3,h4,h5,h6,p{
         line-height: 40px;
         color: $sand;
         text-align: center; 
+        @include md{
+            font-size: 40px;
+            line-height: 50px;
+        }
+        @include lg{
+            font-size: 60px;
+            line-height: 65px;
+        }
     }
 }
 

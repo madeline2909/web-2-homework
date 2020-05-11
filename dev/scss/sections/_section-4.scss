@@ -40,6 +40,9 @@
             height: 350px;
 
             @include md{
+                background-position: 0 -400px;
+                height: 715px;
+
                 grid-area: g1;
              }
             
@@ -56,6 +59,7 @@
             height: 330px;
 
             @include md{
+                height: 350px;
                 grid-area: g2;
             }
 
@@ -72,6 +76,7 @@
             height: 330px;
 
             @include md{
+                height: 350px;
                 grid-area: g3;
             }
 

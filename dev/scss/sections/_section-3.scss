@@ -8,6 +8,15 @@
         background-size: cover;
         background-position: center;
         height: 520px;
+
+        @include md{
+            background-position: 0 -390px;
+        }
+
+        @include lg{
+            height: 750px;
+            background-position: 0 -740px;
+        }
     }
     
     #section-3-container{

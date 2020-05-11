@@ -61,6 +61,9 @@
 
             #section-2-text{
                 margin: 19px;
+                @include md{
+                    margin: 19px 30px 19px 0;
+                }
                 >h5{
                     margin-top: 10px;
                 }
@@ -92,7 +95,7 @@
         }
 
         @include lg{
-            height: 752px;
+            height: 800px;
         }
 
         @include xl{
