@@ -323,6 +323,10 @@ ul {
   ul li {
     list-style: none; }
 
+.content-margin {
+  padding: 0;
+  margin: 0; }
+
 .content-spacing {
   margin-top: 34px; }
   @media (min-width: 768px) {
@@ -348,9 +352,11 @@ h1, h2, h3, h4, h5, h6, p {
   @media (min-width: 768px) {
     #title {
       text-align: left;
+      line-height: 75px;
       font-size: 56px; } }
   @media (min-width: 992px) {
     #title {
+      text-align: center;
       font-size: 72px; } }
 #section-2-text {
   color: #256061; }
@@ -420,36 +426,47 @@ textarea {
 ============= */
 #footer {
   background-color: #88A4A8;
-  height: 60px; }
+  height: 80px; }
   #footer #footer-container {
     display: flex;
     justify-content: flex-end;
     justify-content: space-between;
+    height: 100%;
     align-items: center; }
 
 /* =============
     section1
 ============= */
 #section-1 {
+  position: relative;
   background-image: url("../img/section-1/hero.jpg");
   background-size: cover;
   background-position: center;
   background-position: 0 -200px;
-  height: 380px; }
-  #section-1 #title {
-    padding: 30px; }
+  height: 420px; }
   @media (min-width: 768px) {
     #section-1 {
-      background-size: 68.75rem;
-      height: 515px;
-      background-position: 0 -1200px; } }
+      background-size: 65.625rem;
+      height: 550px;
+      background-position: 0 -1100px; } }
   @media (min-width: 992px) {
     #section-1 {
       background-size: cover;
-      height: 750px; } }
+      height: 1050px; } }
   @media (min-width: 1200px) {
     #section-1 {
       height: 50vh; } }
+  #section-1 #title {
+    padding: 30px; }
+    @media (min-width: 768px) {
+      #section-1 #title {
+        width: 300px;
+        padding: 50px;
+        position: absolute;
+        bottom: 0; } }
+    @media (min-width: 992px) {
+      #section-1 #title {
+        position: static; } }
 /* =============
     section2
 ============= */
@@ -518,13 +535,13 @@ textarea {
   background-image: url("../img/section-2/section2.jpeg");
   background-size: cover;
   background-position: center;
-  height: 481px; }
+  height: 600px; }
   @media (min-width: 768px) {
     #section-2 aside {
-      height: 420px; } }
+      height: 550px; } }
   @media (min-width: 992px) {
     #section-2 aside {
-      height: 800px; } }
+      height: 1000px; } }
 /* =============
     section3
 ============= */
@@ -596,7 +613,7 @@ textarea {
     height: 350px; }
     @media (min-width: 768px) {
       #section-4 #gallery #g1 {
-        background-position: 0 -400px;
+        background-position: 0 -350px;
         height: 715px;
         grid-area: g1; } }
     @media (min-width: 992px) {
@@ -655,10 +672,6 @@ textarea {
     background-position: center;
     height: 400px;
     grid-area: section-5-img-container; }
-    @media (min-width: 992px) {
-      #section-5 #section-5-img-container {
-        height: 318px;
-        margin: 0 15px; } }
   #section-5 #section-5-text-container {
     grid-area: section-5-text-container; }
     @media (min-width: 992px) {
@@ -673,6 +686,9 @@ textarea {
     #section-5 #section-5-text-container #section-5-text {
       margin: 25px 0;
       grid-area: section-5-text; }
+      @media (min-width: 768px) {
+        #section-5 #section-5-text-container #section-5-text {
+          margin: 50px 0; } }
       @media (min-width: 992px) {
         #section-5 #section-5-text-container #section-5-text {
           grid-area: section-5-text; } }

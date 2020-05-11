@@ -36,10 +36,7 @@
         background-position: center;
         height: 400px;
         grid-area: section-5-img-container;
-        @include lg{
-            height: 318px;
-            margin: 0 15px;
-        }
+        
     }
 
     #section-5-text-container{
@@ -59,6 +56,10 @@
         #section-5-text{
             margin: 25px 0;
             grid-area: section-5-text;
+
+            @include md{
+                margin: 50px 0;
+            }
 
             @include lg{
                 grid-area: section-5-text;

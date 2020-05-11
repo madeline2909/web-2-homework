@@ -2,29 +2,41 @@
     section1
 ============= */
 #section-1{
-    #title{
-        padding: 30px;
-    }
-    
+    position: relative;
     background-image: url('../img/section-1/hero.jpg');
     background-size: cover;
     background-position: center;
     background-position: 0 -200px;
-    height: 380px;
+    height: 420px;
 
     @include md{
-        background-size: rem-calc(1100);
-        height: 515px;
-        background-position: 0 -1200px;
+        background-size: rem-calc(1050);
+        height: 550px;
+        background-position: 0 -1100px;
     }
     @include lg{ 
         background-size: cover;
-        height: 750px;
+        height: 1050px;
+        
     }
 
     @include xl{
         height: 50vh;
     }
 
+    #title{
+        padding: 30px;
+        @include md{
+            width: 300px;
+            padding: 50px;
+            position: absolute;
+            bottom: 0;
+        }
+        @include lg{
+            position: static;
+        }
+        
+    }
+    
     
 }

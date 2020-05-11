@@ -40,6 +40,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/section-2/section2.jpeg": {
+		"ft": 16384,
+		"iS": 231385,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-2/section2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/section-3/hero2.jpg": {
 		"ft": 16384,
 		"iS": 323978,

@@ -88,14 +88,14 @@
         background-image: url('../img/section-2/section2.jpeg');
         background-size: cover;
         background-position: center;
-        height: 481px;
+        height: 600px;
 
         @include md{
-            height: 420px;
+            height: 550px;
         }
 
         @include lg{
-            height: 800px;
+            height: 1000px;
         }
 
         @include xl{

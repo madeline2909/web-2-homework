@@ -14,9 +14,11 @@ h1,h2,h3,h4,h5,h6,p{
     color: $white;
     @include md{
         text-align: left;
+        line-height: 75px;
         font-size: 56px;
     }
     @include lg{
+        text-align: center;
         font-size: 72px;
     }
 }
