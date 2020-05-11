@@ -47,7 +47,7 @@
             grid-area: section-2-container;
 
             display: grid;
-            grid-template-columns: 15px auto 15px;
+            grid-template-columns: 15px auto 35px;
             grid-template-areas:
             ". section-2-content .";
         }
@@ -63,6 +63,9 @@
                 margin: 19px;
                 @include md{
                     margin: 19px 30px 19px 0;
+                }
+                @include lg{
+                    margin: 25px 0;
                 }
                 >h5{
                     margin-top: 10px;

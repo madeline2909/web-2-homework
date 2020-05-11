@@ -34,6 +34,11 @@ h1,h2,h3,h4,h5,h6,p{
             font-size: 35px;
             line-height: 35px;
         }
+        @include lg{
+            width: 80%;
+            font-size: 43px;
+            line-height: 43px;
+        }
         
     }
     >h5{
@@ -41,6 +46,11 @@ h1,h2,h3,h4,h5,h6,p{
         font-weight: 500;
         font-size: 18px;
         line-height: 25px;
+        @include lg{
+            width: 90%;
+            font-size: 22px;
+            line-height: 32px;
+        }
     }
 }
 
