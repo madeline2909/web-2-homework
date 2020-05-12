@@ -32,6 +32,7 @@ header {
             justify-content: flex-end;
             padding: 20px;
 
+            
             @include lg {
                 display: none !important;
             }
@@ -39,6 +40,20 @@ header {
             i {
                 cursor: pointer;
             }
+
+            // a:link,
+            // a:visited {
+            //     color: $marble;
+            //     text-decoration: none;
+            //     transition: 0.25s;
+            //     font-size: rem-calc(50);
+            // }
+
+            // a:hover,
+            // a:active {
+            //     color: $white;
+            // }
+            
         }
 
         #nav-container {

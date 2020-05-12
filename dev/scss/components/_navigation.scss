@@ -1,6 +1,7 @@
 /* =============
     Navigation
 ============= */
+
 #nav-container {
     ul {
         height: 100%;
@@ -25,6 +26,7 @@
                 color: $marble;
                 text-decoration: none;
                 transition: 0.25s;
+                font-size: rem-calc(20);
             }
 
             a:hover,

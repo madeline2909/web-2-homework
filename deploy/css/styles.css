@@ -324,6 +324,16 @@ ul {
   ul li {
     list-style: none; }
 
+.show-for-medium {
+  display: none; }
+  @media (min-width: 768px) {
+    .show-for-medium {
+      display: block; } }
+.show-for-large {
+  display: none; }
+  @media (min-width: 992px) {
+    .show-for-large {
+      display: block; } }
 .content-margin {
   padding: 0;
   margin: 0; }
@@ -452,7 +462,8 @@ textarea {
     #nav-container ul li a:visited {
       color: #256061;
       text-decoration: none;
-      transition: 0.25s; }
+      transition: 0.25s;
+      font-size: 1.25rem; }
     #nav-container ul li a:hover,
     #nav-container ul li a:active {
       color: #fff; }
@@ -512,7 +523,6 @@ header {
     display: flex;
     height: 100%;
     justify-content: flex-end;
-    justify-content: space-between;
     align-items: flex-end; }
 
 /* =============
