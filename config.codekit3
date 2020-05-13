@@ -119,19 +119,11 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/deploy/js/scripts-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"/deploy/js/scripts-min.js.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/deploy/js/scripts-min.js.map",
-		"oF": 0
 		},
 	"/design/web2 inclass.sketch": {
 		"cB": 0,
@@ -168,7 +160,7 @@
 	"/dev/js/scripts.js": {
 		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/deploy/js/scripts-min.js",

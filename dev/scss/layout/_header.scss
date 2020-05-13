@@ -2,6 +2,7 @@
     Header
 ============= */
 header {
+    
     background-color: $light-sand;
     left: 0;
     position: fixed;
@@ -22,7 +23,7 @@ header {
 
         #logo-container {
             grid-area: logo;
-            padding: 20px;
+            padding: 5px 20px;
         }
 
         #burger-container {
@@ -39,20 +40,22 @@ header {
 
             i {
                 cursor: pointer;
+                
+                a:link,
+                a:visited {
+                    color: $marble;
+                    text-decoration: none;
+                    transition: 0.25s;
+                    font-size: rem-calc(50);
+                }
+        
+                a:hover,
+                a:active {
+                    color: $white;
+                }
             }
-
-            // a:link,
-            // a:visited {
-            //     color: $marble;
-            //     text-decoration: none;
-            //     transition: 0.25s;
-            //     font-size: rem-calc(50);
-            // }
-
-            // a:hover,
-            // a:active {
-            //     color: $white;
-            // }
+            
+            
             
         }
 

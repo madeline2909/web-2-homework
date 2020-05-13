@@ -2,8 +2,6 @@
     section1
 ============= */
 #section-1{
-    position: relative;
-
     background-image: url('../img/section-1/hero.jpg');
     background-size: cover;
     background-position: center;
@@ -24,17 +22,14 @@
 
 
     #title{
-        padding: 30px;
+        padding: 80px 30px;
         @include md{
             width: 300px;
-            padding: 50px;
-            position: absolute;
-            bottom: 0;
+            padding: 90px 50px;
         }
         @include lg{
-            padding: 30px 0;
+            padding: 90px 0;
             width: 100%;
-            position: static;
         }
         
     }
