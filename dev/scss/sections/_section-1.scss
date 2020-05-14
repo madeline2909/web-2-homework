@@ -1,38 +1,35 @@
 /* =============
     section1
 ============= */
-#section-1{
+#section-1 {
     background-image: url('../img/section-1/hero.jpg');
-    background-size: cover;
-    background-position: center;
     background-position: 0 -200px;
+    background-size: cover;
     height: 420px;
 
-    @include md{
+    @include md {
+        background-position: 0 -1180px;
         background-size: 1100px;
         height: 550px;
-        background-position: 0 -1180px;
     }
 
-    @include lg{
+    @include lg {
+        background-position: 0 -1300px;
         background-size: cover;
         height: 720px;
-        background-position: 0 -1300px;
     }
 
-
-    #title{
+    #title {
         padding: 80px 30px;
-        @include md{
-            width: 300px;
+
+        @include md {
             padding: 90px 50px;
+            width: 300px;
         }
-        @include lg{
+
+        @include lg {
             padding: 90px 0;
             width: 100%;
         }
-        
     }
-    
-    
 }

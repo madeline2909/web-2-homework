@@ -1,68 +1,63 @@
 /* =============
     section5
 ============= */
-
-#section-5{
+#section-5 {
     display: grid;
+    grid-template-areas: ". section-5-img-container ."
+        ". section-5-text-container .";
     grid-template-columns: 15px auto 15px;
-    grid-template-areas: 
-    ". section-5-img-container ."
-    ". section-5-text-container .";
 
-    @include xl{
+    @include xl {
         grid-template-columns: auto 1200px auto;
     }
 
-    @include md{
+    @include md {
         display: grid;
+        grid-template-areas: ". section-5-img-container ."
+            ". section-5-text-container .";
         grid-template-columns: 12% auto 12%;
-        grid-template-areas: 
-        ". section-5-img-container ."
-        ". section-5-text-container .";
     }
 
-    @include lg{
+    @include lg {
         display: grid;
-        grid-template-columns:  20px 30% auto;
-        grid-template-areas: 
-        ". section-5-img-container section-5-text-container";
+        grid-template-areas: ". section-5-img-container section-5-text-container";
+        grid-template-columns: 20px 30% auto;
     }
 
-    #section-5-img-container{
+    #section-5-img-container {
         background-image: url('../img/section-5/profile.png');
-        background-size: contain;
-        background-repeat: no-repeat;
         background-position: center;
-        height: 400px;
+        background-repeat: no-repeat;
+        background-size: contain;
         grid-area: section-5-img-container;
+        height: 400px;
     }
 
-    #section-5-text-container{
+    #section-5-text-container {
         grid-area: section-5-text-container;
-        @include lg{
-            grid-area: section-5-text-container;
-            
+
+        @include lg {
             display: grid;
-            grid-template-columns: 20% auto 20%;
+            grid-area: section-5-text-container;
             grid-template-areas: ". section-5-text .";
+            grid-template-columns: 20% auto 20%;
         }
 
-        @include md{
+        @include md {
             grid-area: section-5-text-container;
         }
 
-        #section-5-text{
-            margin: 25px 0;
+        #section-5-text {
             grid-area: section-5-text;
+            margin: 25px 0;
 
-            @include md{
+            @include md {
                 margin: 50px 0;
             }
 
-            @include lg{
+            @include lg {
                 grid-area: section-5-text;
             }
         }
     }
-    
 }

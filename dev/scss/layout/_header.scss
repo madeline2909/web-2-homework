@@ -2,7 +2,6 @@
     Header
 ============= */
 header {
-    
     background-color: $light-sand;
     left: 0;
     position: fixed;
@@ -11,9 +10,8 @@ header {
 
     >div {
         display: grid;
-        grid-template-areas: 
-        "logo burger"
-        "nav nav";
+        grid-template-areas: "logo burger"
+            "nav nav";
         grid-template-columns: 80% auto;
 
         @include lg {
@@ -33,30 +31,26 @@ header {
             justify-content: flex-end;
             padding: 20px;
 
-            
             @include lg {
                 display: none !important;
             }
 
             i {
                 cursor: pointer;
-                
+
                 a:link,
                 a:visited {
                     color: $marble;
+                    font-size: rem-calc(50);
                     text-decoration: none;
                     transition: 0.25s;
-                    font-size: rem-calc(50);
                 }
-        
+
                 a:hover,
                 a:active {
                     color: $white;
                 }
             }
-            
-            
-            
         }
 
         #nav-container {
