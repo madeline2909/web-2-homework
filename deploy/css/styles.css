@@ -467,7 +467,16 @@ textarea {
       #nav-container ul li {
         align-items: center;
         display: flex;
-        margin: 0px 30px 0 0; } }
+        margin: 0px 30px 0 0; }
+        #nav-container ul li a:link,
+        #nav-container ul li a:visited {
+          color: #256061;
+          font-size: 1.25rem;
+          text-decoration: none;
+          transition: 0.25s; }
+        #nav-container ul li a:hover,
+        #nav-container ul li a:active {
+          color: #fff; } }
     #nav-container ul li a:link,
     #nav-container ul li a:visited {
       color: #256061;
@@ -476,7 +485,7 @@ textarea {
       transition: 0.25s; }
     #nav-container ul li a:hover,
     #nav-container ul li a:active {
-      color: #fff; }
+      color: #9F8273; }
 
 /* =============
     Header
@@ -509,22 +518,14 @@ header {
           display: none !important; } }
       header > div #burger-container i {
         cursor: pointer; }
-        header > div #burger-container i a:link,
-        header > div #burger-container i a:visited {
-          color: #256061;
-          font-size: 3.125rem;
-          text-decoration: none;
-          transition: 0.25s; }
-        header > div #burger-container i a:hover,
-        header > div #burger-container i a:active {
-          color: #fff; }
     header > div #nav-container {
-      background-color: #E1CDC3;
+      background-color: #fff;
       display: none;
       grid-area: nav;
       padding: 20px; }
       @media (min-width: 992px) {
         header > div #nav-container {
+          background-color: #E1CDC3;
           display: block !important; } }
 /* =============
     Footer

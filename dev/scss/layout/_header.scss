@@ -7,7 +7,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-
+    
     >div {
         display: grid;
         grid-template-areas: "logo burger"
@@ -37,29 +37,17 @@ header {
 
             i {
                 cursor: pointer;
-
-                a:link,
-                a:visited {
-                    color: $marble;
-                    font-size: rem-calc(50);
-                    text-decoration: none;
-                    transition: 0.25s;
-                }
-
-                a:hover,
-                a:active {
-                    color: $white;
-                }
             }
         }
 
         #nav-container {
-            background-color: $light-sand;
+            background-color: $white;
             display: none;
             grid-area: nav;
             padding: 20px;
 
             @include lg {
+                background-color: $light-sand;
                 display: block !important;
             }
         }
